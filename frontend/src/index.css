@@ -1,0 +1,12 @@
+main {
+    min-height: 85vh;
+}
+
+h4{
+    padding: 1rem 0;
+ }
+.rating span{
+    margin: 0.1rem;
+}
+
+.navbar { padding-top: 0.25rem; padding-bottom: 0.25rem; }
