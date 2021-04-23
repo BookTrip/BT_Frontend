@@ -1,6 +1,6 @@
 const products = [
     {
-        _id:'1',
+
         name: 'Ikigai: The Japanese Secret to a Long and Happy Life',
         image: '/images/Ikigai.jpg',
         description:
@@ -13,7 +13,7 @@ const products = [
         countInStock: 3,
     },
     {
-        _id:'2',
+
         name: 'Moral Compass',
         image: '/images/mc.jpg',
         description:
@@ -26,7 +26,7 @@ const products = [
         countInStock: 0,
     },
     {
-        _id:'3',
+
         name: 'Harry Potter and the Prisoner of Azkaban',
         image: '/images/hp.jpg',
         description:
@@ -39,7 +39,7 @@ const products = [
         countInStock: 15,
     },
     {
-        _id:'4',
+
         name: 'Imperfections of Memory',
         image: '/images/mem.jpg',
         description:
@@ -52,7 +52,7 @@ const products = [
         countInStock: 26,
     },
     {
-        _id:'5',
+
         name: 'Secret Widow',
         image: '/images/sw.jpg',
         description:
