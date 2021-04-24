@@ -1,6 +1,5 @@
 const products = [
     {
-
         name: 'Ikigai: The Japanese Secret to a Long and Happy Life',
         image: '/images/Ikigai.jpg',
         description:
