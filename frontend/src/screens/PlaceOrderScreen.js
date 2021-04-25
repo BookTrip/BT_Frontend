@@ -55,6 +55,18 @@ const PlaceOrderScreen = ({ history }) => {
         <Col md={8}>
           <ListGroup variant="flush">
             <ListGroup.Item>
+              <h2>User Details</h2>
+              <p>
+                <strong>Phone No:</strong>
+                {""} {cart.shippingAddress.number}
+              </p>
+              <p>
+                <strong>Email Address:</strong>
+                {""} {cart.shippingAddress.email}
+              </p>
+            </ListGroup.Item>
+
+            <ListGroup.Item>
               <h2>Payment Method</h2>
               <strong>Method: </strong>
               {cart.paymentMethod}

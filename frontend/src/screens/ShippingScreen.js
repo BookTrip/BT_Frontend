@@ -14,13 +14,14 @@ const ShippingScreen = ({ history }) => {
   const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
   const [country, setCountry] = useState(shippingAddress.country);
   const [number, setNumber] = useState(shippingAddress.number);
+  const [email, setEmail] = useState(shippingAddress.email);
 
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(
-      saveShippingAddress({ address, city, postalCode, country, number })
+      saveShippingAddress({ address, city, postalCode, country, number, email })
     );
     history.push("/payment");
   };
@@ -28,7 +29,7 @@ const ShippingScreen = ({ history }) => {
   return (
     <FormContainer>
       <CheckoutSteps step1 step2 />
-      <h1>Shipping</h1>
+      <h1>User Details</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="address">
           <Form.Label>Address</Form.Label>
@@ -82,6 +83,17 @@ const ShippingScreen = ({ history }) => {
             value={number}
             required
             onChange={(e) => setNumber(e.target.value)}
+          ></Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="email">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter Contact"
+            value={email}
+            required
+            onChange={(e) => setEmail(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
