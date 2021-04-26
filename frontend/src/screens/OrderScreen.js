@@ -12,15 +12,15 @@ import { ORDER_PAY_RESET } from "../constants/orderConstants";
 const OrderScreen = ({ match }) => {
   const orderId = match.params.id;
 
-  /* const [sdkReady, setSdkReady] = useState(false); */
+  const [sdkReady, setSdkReady] = useState(false);
 
   const dispatch = useDispatch();
 
   const orderDetails = useSelector((state) => state.orderDetails);
   const { order, loading, error } = orderDetails;
 
-  /* const orderPay = useSelector((state) => state.orderPay);
-  const { loading: loadingPay, success: successPay } = orderPay; */
+  const orderPay = useSelector((state) => state.orderPay);
+  const { loading: loadingPay, success: successPay } = orderPay;
 
   if (!loading) {
     //   Calculate prices
@@ -34,10 +34,11 @@ const OrderScreen = ({ match }) => {
   }
 
   useEffect(() => {
-    dispatch(getOrderDetails(orderId));
-  }, [dispatch, orderId]);
+    if (!order || order._id !== orderId) {
+      dispatch(getOrderDetails(orderId));
+    }
 
-  /* const addPayPalScript = async () => {
+    const addPayPalScript = async () => {
       const { data: clientId } = await axios.get("/api/config/paypal");
       const script = document.createElement("script");
       script.type = "text/javascript";
@@ -65,8 +66,6 @@ const OrderScreen = ({ match }) => {
     console.log(paymentResult);
     dispatch(payOrder(orderId, paymentResult));
   };
-
-*/
 
   return loading ? (
     <Loader />
@@ -172,7 +171,7 @@ const OrderScreen = ({ match }) => {
                   <Col>₹{order.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
-              {/*   {!order.isPaid && (
+              {!order.isPaid && (
                 <ListGroup.Item>
                   {loadingPay && <Loader />}
                   {!sdkReady ? (
@@ -184,7 +183,7 @@ const OrderScreen = ({ match }) => {
                     />
                   )}
                 </ListGroup.Item>
-                  )} */}
+              )}
             </ListGroup>
           </Card>
         </Col>
