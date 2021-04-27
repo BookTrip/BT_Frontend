@@ -23,6 +23,10 @@ h4 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.navbar {
+  background-color: #14544c;
+  border-color: #E7E7E7;
+}
 
 body {
   font-family: sans-serif;
@@ -45,7 +49,7 @@ body {
 }
 
 .carousel img {
-  height: 300px;
+  height: 400px;
   padding: 50px;
   margin: 40px;
 
@@ -55,3 +59,4 @@ body {
 .carousel a {
   margin: 0 auto;
 }
+

@@ -18,11 +18,11 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="light" variant="light" expand="lg" collapseOnSelect>
+      <Navbar variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src="logo1.png" alt="Book Trip" width="140" height="50" />
+              <img src="log1.png" alt="Book Trip" width="140" height="70" />
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
