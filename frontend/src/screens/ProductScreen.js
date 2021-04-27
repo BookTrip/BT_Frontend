@@ -15,7 +15,7 @@ import Rating from "../components/Rating";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listProductDetails, createProductReview, } from "../actions/productActions";
-import{ PRODUCT_CREATE_REVIEW_REQUEST, PRODUCT_CREATE_REVIEW_RESET} from "../constants/productConstants"
+import{ PRODUCT_CREATE_REVIEW_RESET} from "../constants/productConstants"
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);
