@@ -22,7 +22,7 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src="log1.png" alt="Book Trip" width="140" height="70" />
+              <img src="%PUBLIC_URL%/../../log1.png" alt="Book Trip" width="140" height="70" />
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -200,7 +200,7 @@ const OrderScreen = ({ match, history }) => {
                     <Loader />
                   ) : (
                     <PayPalButton
-                      amount={order.totalPrice}
+                      amount={((order.totalPrice)*0.01368).toFixed(2)}
                       onSuccess={successPaymentHandler}
                     />
                   )}
