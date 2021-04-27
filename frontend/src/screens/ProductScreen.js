@@ -12,6 +12,7 @@ import {
   FormGroup,
 } from "react-bootstrap";
 import Rating from "../components/Rating";
+import Meta from "../components/Meta";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listProductDetails, createProductReview, } from "../actions/productActions";
@@ -73,6 +74,7 @@ const ProductScreen = ({ history, match }) => {
       ) : (
         <>
         <Row>
+          <Meta title={product.name}/>
           <Col md={4}>
             <Image src={product.image} alt={product.name} fluid />
           </Col>
