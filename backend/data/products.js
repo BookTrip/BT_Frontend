@@ -7,9 +7,9 @@ const products = [
         authors: 'Francesc Miralles, Hector Garcia',
         genre:'Self-help Book',
         price: 300,
-        rating: 4.5,
-        numReviews: 4,
-        countInStock: 3,
+        rating: 0,
+        numReviews: 0,
+        countInStock: 10000,
     },
     {
 
@@ -20,8 +20,8 @@ const products = [
         authors: 'Danielle Steel',
         genre:'Domestic Fiction',
         price: 250,
-        rating: 3.9,
-        numReviews: 3,
+        rating: 0,
+        numReviews: 0,
         countInStock: 0,
     },
     {
@@ -33,9 +33,9 @@ const products = [
         authors: 'Danielle Steel',
         genre:'Fiction, Adventure',
         price: 500,
-        rating: 4.9,
-        numReviews: 4,
-        countInStock: 15,
+        rating: 0,
+        numReviews: 0,
+        countInStock: 15000,
     },
     {
 
@@ -46,9 +46,9 @@ const products = [
         authors: 'Angelena Aludo',
         genre:'Slice of Life',
         price: 200,
-        rating: 3.2,
-        numReviews: 9,
-        countInStock: 26,
+        rating: 0,
+        numReviews: 0,
+        countInStock: 10000,
     },
     {
 
@@ -59,9 +59,9 @@ const products = [
         authors: 'Sylvie Fox',
         genre:'Romance novel',
         price: 250,
-        rating: 3.8,
-        numReviews: 7,
-        countInStock: 20,
+        rating: 0,
+        numReviews: 0,
+        countInStock: 10000,
     },
 ]
 export default products
