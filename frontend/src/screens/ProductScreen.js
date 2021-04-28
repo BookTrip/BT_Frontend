@@ -33,7 +33,10 @@ const ProductScreen = ({ history, match }) => {
 
 
   const productReviewCreate = useSelector((state) => state.productReviewCreate);
-  const { success:successProductReview, error:errorProductReview,} = productReviewCreate;
+  const { success:successProductReview,
+          loading: loadingProductReview,
+          error:errorProductReview,
+        } = productReviewCreate;
 
 
 
@@ -41,12 +44,13 @@ const ProductScreen = ({ history, match }) => {
 
   useEffect(() => {
     if (successProductReview){
-      alert('Review Submitted!')
-      setRating(0)
-      setComment('')
-      dispatch({type:PRODUCT_CREATE_REVIEW_RESET})
+      setRating(0);
+      setComment('');
     }
-    dispatch(listProductDetails(match.params.id));
+    if (!product._id || product._id !== match.params.id) {
+      dispatch(listProductDetails(match.params.id));
+      dispatch({type:PRODUCT_CREATE_REVIEW_RESET});
+    }
   }, [dispatch, match, successProductReview]);
 
   const addToCartHandler = () => {
@@ -151,6 +155,12 @@ const ProductScreen = ({ history, match }) => {
                 <h2>
                   Write a Customer Review
                 </h2>
+                {successProductReview && (
+                    <Message variant='success'>
+                      Review submitted successfully
+                    </Message>
+                  )}
+                  {loadingProductReview && <Loader />}
                 {errorProductReview && <Message variant='danger'>{errorProductReview}</Message>}
                 {userInfo ? (<Form onSubmit={submitHandler}>
                   <FormGroup controlId='rating'>
@@ -178,7 +188,7 @@ const ProductScreen = ({ history, match }) => {
                         ></Form.Control>
                       </Form.Group>
                       <Button
-                        
+                        disabled={loadingProductReview}
                         type='submit'
                         variant='primary'
                       >
