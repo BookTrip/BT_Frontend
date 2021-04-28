@@ -46,7 +46,7 @@ const ProductEditScreen = ({ match, history }) => {
         setImage(product.image);
         setGenre(product.genre);
         setAuthors(product.authors);
-        setCountInStock(product.countInSock);
+        setCountInStock(product.countInStock);
         setDescription(product.description);
       }
     }
