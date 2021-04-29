@@ -130,7 +130,8 @@ const OrderScreen = ({ match, history }) => {
                 {order.paymentMethod}
               </p>
               {order.isPaid ? (
-                <Message variant="success">Paid on {order.paidAt}</Message>
+                <Message variant="success">Paid on {order.paidAt} <h2>Your Ebook will be delivered in pdf format along with the receipt
+                  to your registered email in the next 24 hours. Thank You for using our service. :) </h2></Message>
               ) : (
                 <Message variant="danger">Not Paid</Message>
               )}
