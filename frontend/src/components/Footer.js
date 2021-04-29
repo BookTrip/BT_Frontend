@@ -1,17 +1,54 @@
 import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap'
+import styled from 'styled-components'
 
 const Footer = () => {
-    return <footer>
-        <Container>
-            <Row>
-                <Col className='text-center py-3'>
-                 Created by: Dhruv Chopra | Ayush Kumar | Vernie Thorpe
-                </Col>
-            </Row>
-        </Container>
-    </footer>
+    return (
+        <div className='main-footer'>
+        <div className='footer-middle'>
+        <div className='container'>
+        <div className='row'>
+            {}
+            <div className='col-md-4 col-sm-4'>
+                <h4 className='fh'>Contacts</h4>
+                <ul className='list-unstyled'>
+                    <li><i className="fas fa-envelope"></i> dvapec2021@gmail.com</li>
+                    <li><i className="fas fa-phone-alt"></i> +91 9876226982</li>
+                    <li><i className="fas fa-phone-alt"></i> +91 8427066452</li>
+                </ul>
+            </div>
+            {}
+            <div className='col-md-4 col-sm-4'>
+                <h4 className='fh'>Social Media</h4>
+                <ul className='list-unstyled'>
+                <li><i className="fab fa-twitter"></i> Twitter</li>
+                    <li><i className="fab fa-instagram"></i> Instagram</li>
+                    <li><i className="fab fa-facebook"></i> Facebook</li>
+                </ul>
+            </div> 
+            {}
+            <div className='col-md-4 col-sm-4'>
+                <h4 className='fh'>Company</h4>
+                <ul className='list-unstyled'>
+                    <li>Author Services</li>
+                    <li>Accessibility Statement</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+        {/*Footer Bottom*/}
+        <div className='footer-bottom'>
+            <p className='text-xs-center'>
+               <h5 className='tradem'> Created by Dhruv Chopra | Ayush Kumar | Vernie Thorpe</h5> 
+               <Col className='text-center py-3'>Copyright &copy; BookTrip</Col>
+            </p>
+        </div>
+        </div>
+        </div>   
+        </div>
+    )
     
 }
 
-export default Footer
+export default Footer;
+
