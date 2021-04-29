@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='row'>
             {}
             <div className='col-md-4 col-sm-4'>
-                <h4 className='fh'>Contacts</h4>
+                <h4 className='fh'>Contact Us</h4>
                 <ul className='list-unstyled'>
                     <li><i className="fas fa-envelope"></i> dvapec2021@gmail.com</li>
                     <li><i className="fas fa-phone-alt"></i> +91 9876226982</li>
