@@ -37,32 +37,100 @@ body {
 .carousel-item.active {
   display: flex;
 }
-.carousel-caption {
-  position: absolute;
-  top: 0;
-}
+.carousel-caption { width:480px; z-index:10; color:#fff; 
+  text-align:center; top:35%; left:43%; bottom:auto; 
+  -webkit-transform:translate(0, -50%); 
+  -ms-transform:translate(0, -50%);
+   transform:translate(0, -50%);
+   }
 
+.carousel-caption-2 { width:400px; z-index:10; color:#fff; 
+    text-align:center; top:65%; left:55%; bottom:auto; 
+    -webkit-transform:translate(0, -50%); 
+    -ms-transform:translate(0, -50%);
+     transform:translate(0, -50%);}
+
+.carousel-caption-2 h5 {
+      color: rgb(255, 255, 255);
+      font-family: "Verdana", sans-serif;
+      font-size: 25px;
+    }
+  
 .carousel-caption h2 {
   color: rgb(255, 255, 255);
-  font-family: "Verdana", sans-serif;
-  font-size: 20px;
+  font-family: "Rockwell", serif;
+  font-size: 40px;
+  
 }
 
 .carousel img {
-  height: 400px;
+  height: 450px;
   padding: 50px;
-  margin: 40px;
+
 
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 500px;
 }
 .carousel a {
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-  .carousel-caption h2 {
-    font-size: 2.5vw;
-  }
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08),
+   0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),
+    .3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
+cursor: pointer;
 }
 
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.bg-primary{
+  background-image: #14544c ;
+}
+
+
+
+.serv {
+  font-size: 20px;
+
+}
+
+.main-footer {
+  background-color: #14544c;
+  border-color: #E7E7E7;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.text-xs-center{
+  text-align: center;
+  padding-top: 0.1rem;
+}
+.tradem {
+  color: #fff;
+  font-size: 15px;
+}
+.list-unstyled{
+  color: #fff;
+  text-align: center;
+}
+.fh{
+  color: #fff;
+  text-align: center;
+}
+.footer-middle{
+  align-content: center;
+  
+}
+
+.text-xs-center{
+  color: #fff;
+
+}
