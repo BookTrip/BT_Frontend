@@ -14,7 +14,7 @@
 If you've ever set foot in a bookworm's bedroom, the first thing you'll notice are the books. In fact, there are probably so many books that the dusty shelves are creaking under the weight of limited-edition hardcovers and dog-eared paperbacks. This lack of space can lead people to wonder what they should do with their books.
 The two main questions arise:
 - How to effectively store books? (so that it takes up minimum space)
-- How to carry books from place to place? (as books can usually be heavy)
+- How to carry books from place to place? (as books are usually heavy)
 
 ## Proposed Solution
 Our team has come up with an online platform as a solution to this problem. BT: BookTrip is an Online Books Platform that would play the role of a catalogue of books, which would be available for download and storage on the user’s devices. It provides the convenience of having thousands of books on a single device.
